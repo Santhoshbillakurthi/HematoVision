@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px;
+            font-size: 28px;
+            border-radius: 6px;
+        }
+        .result-text {
+            font-size: 22px;
+            margin: 25px 0;
+        }
+        img {
+            max-width: 300px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+        button {
+            margin-top: 25px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+       <h3> Prediction Result </h3>
+    </div>
+
+    
+    <h4> <strong>Predicted Class: </strong> {{ class_label }} </h4>
+    <img src ="data:image/png;base64,{{img_data}}" width ="300">
+
+
+    <br>
+    <a href="/" class="button"> Upload Another Image </a>
+</div>
+
+</body>
+</html>
